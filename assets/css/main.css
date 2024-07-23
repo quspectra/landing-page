@@ -1387,7 +1387,11 @@ p {
         .navbar-nav .nav-item .sub-menu > li > a:hover {
           background: rgba(0, 0, 0, 0.05); }
 
-
+          @media (max-width: 767px) {
+            .carousel-section-wrapper .carousel-section.clip-bg::after {
+              height: 200px;
+            }
+          }
 .carousel-section-wrapper {
   position: relative;
   z-index: 3; }
@@ -1404,9 +1408,9 @@ p {
       z-index: -1;
       background: linear-gradient(to right, rgba(111, 88, 232, 0.6) 0%, #3763eb 100%); }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
-      margin-bottom: 40px; }
+      margin-bottom: 20px; }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
-      margin-bottom: 40px; }
+      margin-bottom: 20px; }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .border-btn {
       border-color: #fff;
       color: #fff; }
@@ -1455,7 +1459,7 @@ p {
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
-        bottom: 80px;
+        bottom: 10px;
         margin: auto; }
         .carousel-section-wrapper .carousel-control.carousel-control-prev {
           left: 37%; }
